@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h> /* 亂數相關 */
+#include <time.h>   /* 時間相關 */
+int main(){
+  
+  srand( time(NULL) );
+
+ 
+  int x = rand();
+
+  printf("x = %d\n", x);
+  return 0;
+}
