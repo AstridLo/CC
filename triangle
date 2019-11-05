@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+ unsigned int a,b;
+ scanf("%d", &a);
+ 
+ float x;
+ x=1+a/2;
+ b=(int)x; //層數
+ 
+ int c, d, e, i, j, k;
+
+ if(a==0){
+  printf("");
+ }
+ else{
+    for(i = 1; i <= b; i++){
+    d = b - i;//d個空格 = 總層數 - 第i層
+    
+        for(j = 1; j <= d; j++){
+        printf(" ");//印出前面空格的部份
+        }
+    c = b + i - 1;
+    e = c - d; //e個星號 = 總字元數 + 第幾行-1 
+        for(k = 1; k <= e; k++){
+        printf("*");//印出中間星號的部份
+        }    
+    printf("\n"); //換行   
+    }
+}         
+
+ return 0;
+}
